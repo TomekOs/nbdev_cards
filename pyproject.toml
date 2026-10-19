@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nbdev_cards"
+dynamic = ["version"]
+description = "A sample of how to create a deck of cards lib using nbdev"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [{name = "TomekOs", email = "34418142+TomekOs@users.noreply.github.com"}]
+keywords = ['nbdev']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [
+    "jupyterlab>=4.6.4",
+    "jupyterlab-quarto>=0.3.5",
+]
+
+[project.urls]
+Repository = "https://github.com/TomekOs/nbdev_cards"
+Documentation = "https://TomekOs.github.io/nbdev_cards/"
+
+[project.entry-points.nbdev]
+nbdev_cards = "nbdev_cards._modidx:d"
+
+[tool.setuptools.dynamic]
+version = {attr = "nbdev_cards.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["nbdev_cards"]
+
+[tool.nbdev]

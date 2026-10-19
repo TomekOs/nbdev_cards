@@ -1,0 +1,14 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev_cards"
+  site-url: "https://TomekOs.github.io/nbdev_cards"
+  description: "A sample of how to create a deck of cards lib using nbdev"
+  repo-branch: main
+  repo-url: "https://github.com/TomekOs/nbdev_cards"
+
+format-links:
+  - html
+  - format: commonmark
+    text: Markdown
